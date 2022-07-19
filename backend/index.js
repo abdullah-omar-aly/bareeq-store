@@ -9,7 +9,7 @@ app.listen(port , () => {
 })
 
 const text = process.env.TEXT
-app.get('/api' , (req, res) => {
+app.get('/api/product' , (req, res) => {
     res.json({text})
 })
 
