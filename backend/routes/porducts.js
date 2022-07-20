@@ -2,11 +2,10 @@ const express = require("express")
 
 const router = express.Router()
 
-require('dotenv').config()
-const text = process.env.TEXT
+const ENV = require("../envVariables")
 
 router.get('/' ,(req, res) => {
-    res.json({text})
+    res.json({text : ENV.TEXT})
 })
 
 module.exports = router
